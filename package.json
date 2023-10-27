@@ -1,0 +1,16 @@
+{
+  "name": "myportfolio-gh-pages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://zeph504.github.io/myportfolio",
+  "dependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}

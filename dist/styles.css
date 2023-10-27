@@ -1,0 +1,317 @@
+/* Universal */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #49b8a9;
+}
+
+body {
+  background-color: #b0976e;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:0 20px;
+  background-color: #f2eecb;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.border-line {
+  border-top: 4px dotted #000;
+  margin: 20px 0;
+  width: 75%;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.left {
+  flex: 7;
+}
+.left-alt {
+  flex: 5;
+}
+.right {
+  flex: 5;
+}
+.right-alt {
+  flex: 7;
+}
+
+img{
+  width: 100%;
+}
+
+/* Section Homepage ------------------------------------------------------------------------------------------------------*/
+.container-home{
+  display:flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-home img{
+  width:25%;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.container-home h1{
+  font-size: 72px;
+  margin: 0;
+}
+
+.container-home h2{
+  font-size: 42px;
+}
+
+
+/* Section About Me ----------------------------------------------------------------------------------------------------*/
+
+.container-intro {
+  display: flex;
+  height: 100vh;
+}
+
+.intro-text-left {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text-right {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 25px;
+}
+
+/* Section Skill -------------------------------------------------------------------------------------------------*/
+
+.container-skill {
+  display: flex;
+  height: 100vh;
+}
+
+.skill-text-left {
+  height: 100vh;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skill-text-right {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Project ------------------------------------------------------------------------------------------------------------- */
+.container-project {
+  display: flex;
+  height: 100vh;
+}
+
+.project-left {
+  height: 100vh;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-right {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 75px;
+}
+
+/* Cerificate---------------------------------------------------------------------------------------------------------- */
+.container-certificate {
+  display: flex;
+  height: 100vh;
+}
+
+.certificate-left {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 25px;
+}
+
+.certificate-right {
+  height: 100vh;
+  margin: 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 720px ){
+  main {
+    margin: 0;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  img{
+    display: none;
+  }
+
+  .container-home{
+    flex-direction: column;
+  }
+
+  .right{
+    flex: 0;
+    display: none;
+  }
+
+  .left-alt{
+    flex: 0;
+  }
+
+  .certificate-left, .project-left, .skill-text-left,.intro-text-left,.home-text-left{
+    padding-left: 0;
+  }
+
+  .section{
+    width: auto;
+    height: auto;
+  }
+
+  .container-certificate,.container-home,.container-intro,.container-project,.container-project,.container-skill{
+    height: auto;
+  }
+
+  /* HOMEPAGE ---------------------------------------------------------------------------------------------------------*/
+  
+  .container-home h1{
+    font-size: 32px;
+  }
+
+  .container-home h2{
+    font-size: 24px;
+  }
+
+  
+  
+}
+
+@media only screen and (max-height: 620px ){
+  main {
+    margin: 0;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  img{
+    display: none;
+  }
+
+  .container-home{
+    flex-direction: column;
+  }
+
+  .right{
+    flex: 0;
+    display: none;
+  }
+
+  .left-alt{
+    flex: 0;
+  }
+
+  .certificate-left, .project-left, .skill-text-left,.intro-text-left,.home-text-left{
+    padding-left: 0;
+  }
+
+  .section{
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .container-certificate,.container-home,.container-intro,.container-project,.container-project,.container-skill{
+    height: fit-content;
+  }
+
+  /* HOMEPAGE ---------------------------------------------------------------------------------------------------------*/
+  .container-home h1{
+    font-size: 42px;
+  }
+
+  
+  
+}
